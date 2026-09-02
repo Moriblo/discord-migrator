@@ -32,7 +32,6 @@ echo
 
 step 1 "Environment"
 command -v codex >/dev/null 2>&1 || { echo "ERROR: Codex CLI not found." >&2; exit 1; }
-command -v bwrap >/dev/null 2>&1 || { echo "ERROR: bwrap not found. Install bubblewrap." >&2; exit 1; }
 echo "       STATUS: OK"
 
 step 2 "Repository"
@@ -47,7 +46,7 @@ done
 echo "       STATUS: OK"
 
 step 4 "Current phase instructions"
-PHASE_PROMPT="prompts/phase-0-repository-foundation.md"
+PHASE_PROMPT="prompt/phase-0-repository-foundation.md"
 [[ -f "${PHASE_PROMPT}" ]] || { echo "ERROR: missing ${PHASE_PROMPT}" >&2; exit 1; }
 echo "       STATUS: OK"
 
