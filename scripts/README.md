@@ -15,7 +15,7 @@ These scripts are subordinate to:
 
 1. `AGENT_SPEC.md`
 2. `IMPLEMENTATION_PLAN.md`
-3. The versioned phase prompt under `prompts/`
+3. The versioned phase prompt under `prompt/`
 
 They are not a second source of truth.
 
@@ -144,7 +144,7 @@ Before HITL-0, MARGO must not:
 The canonical Phase 0 instruction is:
 
 ```text
-prompts/phase-0-repository-foundation.md
+prompt/phase-0-repository-foundation.md
 ```
 
 `margo-start.sh` loads it automatically. The runtime wrapper adds session-specific context and observability requirements; it must not weaken authoritative governance.

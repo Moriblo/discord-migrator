@@ -166,7 +166,7 @@ discord-migrator/
 ├── config/
 │   ├── migration.example.json
 │   └── README.md
-├── prompts/
+├── prompt/
 │   └── phase-0-repository-foundation.md
 ├── scripts/
 │   ├── codex-login.sh

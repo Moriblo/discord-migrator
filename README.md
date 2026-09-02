@@ -139,7 +139,7 @@ The project currently uses the following authority hierarchy:
 
 1. [`AGENT_SPEC.md`](AGENT_SPEC.md) — agent behavior, governance, safety, and invariants.
 2. [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) — phased implementation scope and acceptance criteria.
-3. [`prompts/`](prompts/) — phase-specific execution instructions.
+3. [`prompt/`](prompt/) — phase-specific execution instructions.
 4. `README.md` and other supporting documentation — orientation and operational guidance.
 
 If authoritative documents conflict, MARGO must **stop, report the conflict, and request human clarification**. It must not silently choose an interpretation or change the architecture.
@@ -194,25 +194,29 @@ Development bootstrap scripts may create a runtime Run ID for observability, but
 
 ```text
 discord-migrator/
+├── .github/workflows/
 ├── AGENT_SPEC.md
 ├── IMPLEMENTATION_PLAN.md
 ├── README.md
-├── prompts/
+├── agent/                 # Phase 0 placeholders only
+├── config/
+├── docs/
+├── prompt/
 │   ├── README.md
 │   └── phase-0-repository-foundation.md
+├── pyproject.toml
+├── runs/
 ├── scripts/
-└── runs/
+└── tests/
 ```
 
 The structure will evolve as implementation phases are completed.
 
 ## Current Status
 
-**Current development phase: Phase 0 — Repository Foundation**
+**Phase 0 — Repository Foundation is implemented and awaiting human review and phase acceptance.**
 
-Phase 0 must be explicitly authorized through HITL-0 before implementation begins.
-
-The current phase is intentionally limited to repository foundation, development governance, documentation alignment, and the agreed non-destructive tooling.
+No later phase is authorized. The current implementation remains limited to repository foundation, development governance, documentation alignment, and non-destructive tooling.
 
 ## Security Principle
 
@@ -224,9 +228,9 @@ Before running any development automation:
 
 1. Read [`AGENT_SPEC.md`](AGENT_SPEC.md).
 2. Read [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md).
-3. Read the applicable phase prompt under [`prompts/`](prompts/).
+3. Read the applicable phase prompt under [`prompt/`](prompt/).
 4. Follow the phase entry gate.
 5. Provide explicit HITL-0 authorization when requested.
 6. Review the phase result before authorizing any subsequent phase.
 
-See [`prompts/README.md`](prompts/README.md) for the prompt structure and execution rules.
+See [`prompt/README.md`](prompt/README.md) for the prompt structure and execution rules.

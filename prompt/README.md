@@ -123,7 +123,7 @@ Do not introduce new architecture, permissions, migration behavior, or governanc
 The current prompt inventory begins with:
 
 ```text
-prompts/
+prompt/
 ├── README.md
 └── phase-0-repository-foundation.md
 ```

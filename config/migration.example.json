@@ -1,0 +1,20 @@
+{
+  "migration": {
+    "name": "${MIGRATION_NAME}",
+    "mode": "dry-run"
+  },
+  "source": {
+    "server_id": "${SOURCE_SERVER_ID}",
+    "category_id": "${SOURCE_CATEGORY_ID}"
+  },
+  "destination": {
+    "server_id": "${DESTINATION_SERVER_ID}",
+    "category_id": "${DESTINATION_CATEGORY_ID}"
+  },
+  "options": {
+    "include_channels": true,
+    "include_threads": false,
+    "include_message_history": false,
+    "cleanup_source": false
+  }
+}

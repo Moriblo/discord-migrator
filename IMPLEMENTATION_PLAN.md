@@ -171,7 +171,7 @@ Before any repository modification, MARGO must:
 
 1. read `AGENT_SPEC.md`;
 2. read this implementation plan;
-3. read `prompts/phase-0-repository-foundation.md`;
+3. read `prompt/phase-0-repository-foundation.md`;
 4. summarize the phase;
 5. request explicit HITL-0 authorization.
 
@@ -212,7 +212,7 @@ discord-migrator/
 ├── config/
 │   ├── migration.example.json
 │   └── README.md
-├── prompts/
+├── prompt/
 │   └── phase-0-repository-foundation.md
 ├── scripts/
 │   ├── codex-login.sh
